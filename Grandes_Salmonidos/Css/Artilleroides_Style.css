@@ -1,0 +1,882 @@
+/* Body */
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Principal.png);
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.Barra_De_Navegacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Salmon_Run_Next_Wave {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px 20px;
+}
+
+.Logo_Don_Oso_SAS {
+    width: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Salmon_Run {
+    font-family: 'Bebas Neue';
+    color: #ff5033;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Menu_De_Navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#Menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Seccion {
+    display: flex;
+    margin-right: 20px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Seccion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.Seccion.Activo::after {
+    height: 4px;
+}
+
+.Seccion.Activo a {
+    color: #ff5033;
+}
+
+.Seccion:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 4px;
+    background-color: #ff5033;
+    transition: height 0.3s;
+}
+
+.Seccion:hover::after {
+    height: 4px;
+}
+
+.Seccion:hover a {
+    color: #ff5033;
+}
+
+.Decoracion_Barra_De_Navegacion {
+    display: flex;
+    width: 100%;
+    height: 89.9px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Linea_Mancha.png);
+    background-repeat: repeat-x;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+/*Seccion Titulo*/
+.Titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Estilizado.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    position: relative;
+}
+
+.Division_01 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Division_02 {
+    display: flex;
+    width: 100%;
+    height: 175px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titulo_Fondo_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    margin-top: 350px;
+    margin-left: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 580px;
+    margin-top: 350px;
+    margin-left: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Titulo_Fondo_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    margin-bottom: 300px;
+    margin-right: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 480px;
+    margin-bottom: 300px;
+    margin-right: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Titulo_Fondo_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 550px;
+    margin-top: 200px;
+    margin-right: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 530px;
+    margin-top: 200px;
+    margin-right: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Division_03 {
+    display: flex;
+    width: 100%;
+    height: 125px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: end;
+    align-items: end;
+}
+
+.Linea_Seccion_01 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.Titulo_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 300px;
+    width: 1300px;
+    z-index: 0;
+}
+
+.Titulo_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 270px;
+    margin-right: 750px;
+    width: 1500px;
+    transform: rotate(-6deg);
+    z-index: 0;
+}
+
+.Titulo_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 150px;
+    margin-left: 750px;
+    width: 1400px;
+    transform: rotate(15deg);
+    z-index: 0;
+}
+
+/*Seccion 1*/
+.Seccion_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    position: relative;
+}
+
+.Papel {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.Linea_Seccion {
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    margin-top: 426px;
+    z-index: 5;
+}
+
+.Seccion_01_Titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 90%;
+    height: 10%;
+    z-index: 1;
+}
+
+.Titulo_Seccion_01 {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    margin: 0px;
+    padding: 0px 5px;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #000000;
+    font-size: 30px;
+}
+
+.Titulo_Seccion_01_Linea {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    background-color: #000000;
+}
+
+.Seccion_01_Descripcion {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+}
+
+.Seccion_01_Division_01 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Division_01_Mini_Seccion_01 {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Salmonido {
+    display: flex;
+    width: 286px;
+    height: 246px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.Salmonido_Foto {
+    position: absolute;
+    width: 286px;
+    height: 246px;
+}
+
+.Salmonido_Fondo {
+    position: absolute;
+    width: 296px;
+    height: 256px;
+}
+
+.Division_01_Mini_Seccion_02 {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.Seccion_01_Division_02 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Subtitulo {
+    font-size: 25px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #000000;
+}
+
+.Subpunto {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: #000000;
+    padding: 5px 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.Subpunto li {
+    padding-bottom: 10px;
+}
+
+.Subpunto li::before {
+    content: " - ";
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.Seccion_01_Fondo_Foto_01 {
+    position: absolute;
+    width: 650px;
+    margin-bottom: 100px;
+    margin-left: 2020px;
+    transform: rotate(1deg);
+    z-index: 1;
+}
+
+.Seccion_01_Foto_01 {
+    position: absolute;
+    width: 630px;
+    margin-bottom: 100px;
+    margin-left: 2020px;
+    transform: rotate(1deg);
+    z-index: 1;
+}
+
+.Seccion_01_Fondo_Foto_02 {
+    position: absolute;
+    width: 500px;
+    margin-top: 600px;
+    margin-left: 1950px;
+    z-index: 1;
+}
+
+.Seccion_01_Foto_02 {
+    position: absolute;
+    width: 480px;
+    margin-top: 600px;
+    margin-left: 1950px;
+    z-index: 1;
+}
+
+.Seccion_01_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 400px;
+    width: 1200px;
+    margin-right: 500px;
+    transform: rotate(5deg);
+    z-index: 0;
+}
+
+.Seccion_01_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 300px;
+    transform: rotate(7deg);
+    width: 1400px;
+    z-index: 0;
+}
+
+.Seccion_01_Mancha_Pintura_01 {
+    position: absolute;
+    width: 300px;
+    margin-bottom: 300px;
+    margin-left: 900px;
+    transform: rotate(50deg);
+    z-index: 0;
+}
+
+.Seccion_01_Mancha_Pintura_02 {
+    position: absolute;
+    width: 700px;
+    margin-top: 300px;
+    margin-right: 1340px;
+    z-index: 0;
+}
+
+/*Seccion 2*/
+.Seccion_02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Inkling_Octoling.jpg);
+    background-size: 7.223%;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.Seccion_02_Division_01 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px;
+    padding: 20px 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: #000000;
+    z-index: 6;
+}
+
+.Subtitulo_Cuadro {
+    font-size: 25px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.Subpunto_Cuadro {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: #ffffff;
+    padding: 5px 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.Subpunto_Cuadro li {
+    padding-bottom: 10px;
+}
+
+.Subpunto_Cuadro li::before {
+    content: " - ";
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.Seccion_02_Division_02 {
+    display: flex;
+    width: 100%;
+}
+
+.Seccion_03_Linea_Superior {
+    height: auto;
+    width: 100%;
+    z-index: 5;
+}
+
+.Seccion_02_Fondo_Foto_01 {
+    position: absolute;
+    width: 650px;
+    margin-bottom: 350px;
+    margin-right: 2020px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_02_Foto_01 {
+    position: absolute;
+    width: 630px;
+    margin-bottom: 350px;
+    margin-right: 2020px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_02_Fondo_Foto_02 {
+    position: absolute;
+    width: 550px;
+    margin-top: 400px;
+    margin-right: 2000px;
+    z-index: 110;
+}
+
+.Seccion_02_Foto_02 {
+    position: absolute;
+    width: 530px;
+    margin-top: 400px;
+    margin-right: 2000px;
+    z-index: 110;
+}
+
+.Seccion_02_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 380px;
+    margin-right: 200px;
+    transform: rotate(-5deg);
+    width: 1400px;
+    z-index: 0;
+}
+
+.Seccion_02_Mancha_Pintura_01 {
+    position: absolute;
+    width: 400px;
+    margin-bottom: 450px;
+    margin-right: 1200px;
+    transform: rotate(40deg);
+    z-index: 5;
+}
+
+.Seccion_02_Mancha_Pintura_02 {
+    position: absolute;
+    width: 600px;
+    margin-top: 200px;
+    margin-left: 1280px;
+    z-index: 0;
+}
+
+/*Seccion 3*/
+.Seccion_03 {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    position: relative;
+    z-index: 100;
+}
+
+/*Seccion 4*/
+.Seccion_04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Estilizado.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -400px;
+    position: relative;
+}
+
+.Seccion_03_Linea_Inferior {
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.Seccion_04_Division_01 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.Seccion_04_Division_02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 125px;
+}
+
+.Seccion_04_Linea_01 {
+    position: absolute;
+    width: 110%;
+    transform: rotate(-2deg);
+    z-index: 110;
+}
+
+.Seccion_04_Linea_02 {
+    position: absolute;
+    width: 110%;
+    margin-bottom: 220px;
+    transform: rotate(178deg);
+    z-index: 100;
+}
+
+.Seccion_03_Linea_02 {
+    position: absolute;
+    width: 110%;
+    margin-bottom: 320px;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+.Seccion_04_Fondo_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    margin-top: 350px;
+    margin-right: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Seccion_04_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 580px;
+    margin-top: 350px;
+    margin-right: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Seccion_04_Fondo_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    margin-bottom: 300px;
+    margin-left: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Seccion_04_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 480px;
+    margin-bottom: 300px;
+    margin-left: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Seccion_04_Fondo_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 550px;
+    margin-top: 200px;
+    margin-left: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Seccion_04_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 530px;
+    margin-top: 200px;
+    margin-left: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Seccion_04_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 300px;
+    width: 1300px;
+    z-index: 0;
+}
+
+.Seccion_04_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 300px;
+    margin-right: 750px;
+    width: 1500px;
+    transform: rotate(-6deg);
+    z-index: 0;
+}
+
+.Seccion_04_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 280px;
+    margin-right: 750px;
+    width: 1400px;
+    z-index: 0;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-image: url(../../Img/Fondo/Linea_Diagonal.png);
+    background-repeat: repeat;
+    position: relative;
+    z-index: 100;
+    padding-top: 50px;
+}
+
+.Footer_Nombre {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+
+}
+
+.Nombre {
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.Nombre_Linea {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Linea {
+    display: flex;
+    width: 120px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 0px 10px;
+}
+
+.Redes {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.Facebook {
+    display: flex;
+    width: 30px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Facebook:hover {
+    transform: scale(1.1);
+}
+
+.Nintendo {
+    display: flex;
+    width: 50px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Nintendo:hover {
+    transform: scale(1.1);
+}
+
+.Twitter {
+    display: flex;
+    width: 30px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Twitter:hover {
+    transform: scale(1.1);
+}
+
+.Atribuciones {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+}
