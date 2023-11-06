@@ -1,0 +1,2760 @@
+/* Body */
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Principal.png);
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.Barra_De_Navegacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Salmon_Run_Next_Wave {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px 20px;
+}
+
+.Logo_Don_Oso_SAS {
+    width: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Salmon_Run {
+    font-family: 'Bebas Neue';
+    color: #ff5033;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Menu_De_Navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#Menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Seccion {
+    display: flex;
+    margin-right: 20px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Seccion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.Seccion.Activo::after {
+    height: 4px;
+}
+
+.Seccion.Activo a {
+    color: #ff5033;
+}
+
+.Seccion:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 4px;
+    background-color: #ff5033;
+    transition: height 0.3s;
+}
+
+.Seccion:hover::after {
+    height: 4px;
+}
+
+.Seccion:hover a {
+    color: #ff5033;
+}
+
+.Decoracion_Barra_De_Navegacion {
+    display: flex;
+    width: 100%;
+    height: 89.9px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Linea_Mancha.png);
+    background-repeat: repeat-x;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+/*Seccion Titulo*/
+.Titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../../Img/Fondo/Fondo_Estilizado.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    position: relative;
+}
+
+.Division_01 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Division_02 {
+    display: flex;
+    width: 100%;
+    height: 175px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titulo_Fondo_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    margin-top: 350px;
+    margin-right: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_01 {
+    display: flex;
+    position: absolute;
+    width: 580px;
+    margin-top: 350px;
+    margin-right: 1000px;
+    transform: rotate(2deg);
+    z-index: 0;
+}
+
+.Titulo_Fondo_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    margin-bottom: 300px;
+    margin-left: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_02 {
+    display: flex;
+    position: absolute;
+    width: 480px;
+    margin-bottom: 300px;
+    margin-left: 1400px;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.Titulo_Fondo_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 550px;
+    margin-top: 200px;
+    margin-left: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Titulo_Foto_03 {
+    display: flex;
+    position: absolute;
+    width: 530px;
+    margin-top: 200px;
+    margin-left: 1600px;
+    transform: rotate(1deg);
+    z-index: 0;
+}
+
+.Division_03 {
+    display: flex;
+    width: 100%;
+    height: 125px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: end;
+    align-items: end;
+}
+
+.Linea_Seccion_01 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.Titulo_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 300px;
+    width: 1300px;
+    z-index: 0;
+}
+
+.Titulo_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 270px;
+    margin-right: 750px;
+    width: 1500px;
+    transform: rotate(-6deg);
+    z-index: 0;
+}
+
+.Titulo_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 280px;
+    margin-right: 750px;
+    width: 1400px;
+    z-index: 0;
+}
+
+/*Seccion 1*/
+.Seccion_01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 520px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.Espiritu_Empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+.Seccion_Titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.Titulo_General_Negro {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.Titulo_General_Blanco {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.Seccion_Negro_Division {
+    width: 98.8%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #000000;
+}
+
+.Seccion_Blanco_Division {
+    width: 98.8%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.Seccion_Negro_Descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.Seccion_Blanco_Descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.Seccion_Negro_Punto {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.Seccion_Blanco_Punto {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.Punto_Negro {
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+}
+
+.Punto_Blanco {
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.Punto_Texto_Negro {
+    display: flex;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+}
+
+.Punto_Texto_Blanco {
+    display: flex;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Papel {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    z-index: 1;
+}
+
+.Linea_Seccion_02 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 518px;
+    z-index: 5;
+}
+
+.Seccion_01_Fondo_Foto_01 {
+    position: absolute;
+    width: 700px;
+    margin-right: 1700px;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_01_Foto_01 {
+    position: absolute;
+    width: 680px;
+    margin-right: 1700px;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_01_Fondo_Foto_02 {
+    position: absolute;
+    width: 600px;
+    margin-top: 500px;
+    margin-right: 1800px;
+    transform: rotate(10deg);
+    z-index: 6;
+}
+
+.Seccion_01_Foto_02 {
+    position: absolute;
+    width: 580px;
+    margin-top: 500px;
+    margin-right: 1800px;
+    transform: rotate(10deg);
+    z-index: 6;
+}
+
+.Seccion_01_Fondo_Foto_03 {
+    position: absolute;
+    width: 750px;
+    margin-top: 1300px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_01_Foto_03 {
+    position: absolute;
+    width: 730px;
+    margin-top: 1300px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_01_Fondo_Foto_04 {
+    position: absolute;
+    width: 750px;
+    margin-top: 200px;
+    margin-left: 1650px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_01_Foto_04 {
+    position: absolute;
+    width: 730px;
+    margin-top: 200px;
+    margin-left: 1650px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_01_Fondo_Foto_05 {
+    position: absolute;
+    width: 800px;
+    margin-top: 1100px;
+    margin-left: 1800px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_01_Foto_05 {
+    position: absolute;
+    width: 780px;
+    margin-top: 1100px;
+    margin-left: 1800px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_01_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 530px;
+    width: 1500px;
+    margin-left: 100px;
+    transform: rotate(1deg);
+    z-index: 5;
+}
+
+.Seccion_01_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 420px;
+    width: 1600px;
+    transform: rotate(-8deg);
+    z-index: 3;
+}
+
+.Seccion_01_Mancha_Pintura_01 {
+    position: absolute;
+    width: 600px;
+    margin-top: 100px;
+    margin-right: 1100px;
+    z-index: 1;
+}
+
+.Seccion_01_Mancha_Pintura_02 {
+    position: absolute;
+    width: 400px;
+    margin-bottom: 150px;
+    margin-left: 900px;
+    z-index: 1;
+}
+
+/*Seccion 2*/
+.Seccion_02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Dinero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+/*Seccion 3*/
+.Seccion_03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 510px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 250px;
+}
+
+.Seccion_03_Division_01 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_03_Titulo {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 360px;
+    margin-bottom: 105px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-1deg);
+    z-index: 3;
+}
+
+.Seccion_03_Fondo_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 309px;
+    width: 30px;
+    z-index: 4;
+}
+
+.Seccion_03_Fondo_Centro {
+    display: flex;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    background-image: url(../../Img/Fondo/Fondo_Centro_Texto_Naranja.jpg);
+    background-size: 30px;
+    background-repeat: repeat-x;
+    z-index: 3;
+}
+
+.Seccion_03_Texto_Titulo {
+    font-family: 'Bebas Neue';
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_03_Fondo_Derecho {
+    display: flex;
+    width: 30px;
+    position: absolute;
+    margin-left: 309px;
+    z-index: 4;
+}
+
+.Seccion_03_Descripcion {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_03_Cinta_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 674px;
+    width: 13.8px;
+    z-index: 0;
+}
+
+.Seccion_03_Cinta_Centro {
+    display: flex;
+    width: 660px;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #191919;
+}
+
+.Seccion_03_Texto_Cinta {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_03_Cinta_Derecho {
+    display: flex;
+    width: 34.7px;
+    position: absolute;
+    margin-left: 695px;
+    z-index: 0;
+}
+
+.Seccion_03_Division_02 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 220px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Seccion_03_Trabajo {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_03_Texto_Trabajo {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+    width: 60%;
+    font-size: 22px;
+}
+
+.Seccion_03_Cuadro_Trabajo {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 20px 30px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Seccion_03_Division_03 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 130px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Linea_Seccion_04 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.Linea_Superior_Seccion_02 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+    margin-bottom: 883px;
+    z-index: 5;
+}
+
+.Seccion_03_Degradado_Superior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 460px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.Seccion_03_Degradado_Inferior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.Seccion_03_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 420px;
+    width: 1750px;
+    z-index: 6;
+}
+
+.Seccion_03_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 500px;
+    width: 1550px;
+    transform: rotate(-10deg);
+    z-index: 0;
+}
+
+.Seccion_03_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 780px;
+    width: 1750px;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_03_Cinta_De_Seguridad_04 {
+    position: absolute;
+    margin-bottom: 800px;
+    margin-right: 500px;
+    width: 1550px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.Seccion_03_Fondo_Foto_01 {
+    position: absolute;
+    width: 800px;
+    margin-top: 100px;
+    margin-right: 1900px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_03_Foto_01 {
+    position: absolute;
+    width: 780px;
+    margin-top: 100px;
+    margin-right: 1900px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_03_Fondo_Foto_02 {
+    position: absolute;
+    width: 700px;
+    margin-top: 950px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_03_Foto_02 {
+    position: absolute;
+    width: 680px;
+    margin-top: 950px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_03_Fondo_Foto_03 {
+    position: absolute;
+    width: 800px;
+    margin-top: 780px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+.Seccion_03_Foto_03 {
+    position: absolute;
+    width: 780px;
+    margin-top: 780px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+.Seccion_03_Mancha_Pintura_01 {
+    position: absolute;
+    width: 350px;
+    margin-bottom: 400px;
+    margin-left: 1400px;
+    z-index: 0;
+}
+
+.Seccion_03_Mancha_Pintura_02 {
+    position: absolute;
+    width: 150px;
+    margin-bottom: 600px;
+    margin-left: 500px;
+    z-index: 0;
+}
+
+.Seccion_03_Mancha_Pintura_03 {
+    position: absolute;
+    width: 120px;
+    margin-bottom: 350px;
+    margin-right: 950px;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+/*Seccion 4*/
+.Seccion_04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 430px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Como_Se_Juega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Seccion 5*/
+.Seccion_05 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Seccion_05_Division_01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.Seccion_05_Fondo_Foto_01 {
+    position: absolute;
+    width: 600px;
+    margin-left: 600px;
+    transform: rotate(-1deg);
+    z-index: 6;
+}
+
+.Seccion_05_Foto_01 {
+    position: absolute;
+    width: 580px;
+    margin-left: 600px;
+    transform: rotate(-1deg);
+    z-index: 6;
+}
+
+.Seccion_05_Texto_01 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 190px;
+    width: 540px;
+    height: 258px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #191919;
+}
+
+.Seccion_05_Division_Decoracion_Izquierda {
+    position: absolute;
+    margin-right: 1190px;
+}
+
+.Seccion_05_Division_02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.Seccion_05_Texto_02 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 190px;
+    width: 635px;
+    height: 258px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #191919;
+}
+
+.Seccion_05_Fondo_Foto_02 {
+    position: absolute;
+    width: 600px;
+    margin-right: 800px;
+    transform: rotate(1deg);
+    z-index: 6;
+}
+
+.Seccion_05_Foto_02 {
+    position: absolute;
+    width: 580px;
+    margin-right: 800px;
+    transform: rotate(1deg);
+    z-index: 6;
+}
+
+.Seccion_05_Division_Decoracion_Derecha {
+    position: absolute;
+    margin-left: 1260px;
+}
+
+.Texto_Blanco {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.Linea_Inferior_Seccion_05 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 988px;
+    transform: rotate(180deg);
+    z-index: 5;
+}
+
+.Seccion_05_Degradado_Superior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 650px;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.Seccion_05_Degradado_Inferior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 650px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.Seccion_05_Division {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: end;
+    justify-content: end;
+    margin-top: 950px;
+}
+
+.Division_Imagen {
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.Seccion_05_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-bottom: 850px;
+    margin-right: 800px;
+    width: 1650px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.Seccion_05_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-bottom: 1000px;
+    margin-left: 400px;
+    width: 1400px;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+.Seccion_05_Cinta_De_Seguridad_03 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 900px;
+    transform: rotate(-8deg);
+    z-index: -1;
+}
+
+.Seccion_05_Cinta_De_Seguridad_04 {
+    position: absolute;
+    width: 1550px;
+    margin-bottom: 200px;
+    z-index: -1;
+}
+
+.Seccion_05_Cinta_De_Seguridad_05 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.Seccion_05_Mancha_Pintura_01 {
+    position: absolute;
+    width: 500px;
+    margin-top: 700px;
+    margin-left: 1150px;
+    transform: rotate(-70deg);
+    z-index: -1;
+}
+
+.Seccion_05_Mancha_Pintura_02 {
+    position: absolute;
+    width: 700px;
+    margin-bottom: 950px;
+    margin-right: 1200px;
+    transform: rotate(60deg);
+    z-index: -2;
+}
+
+.Seccion_05_Mancha_Pintura_03 {
+    position: absolute;
+    width: 100px;
+    margin-bottom: 1020px;
+    margin-right: 350px;
+    z-index: -1;
+}
+
+.Seccion_05_Cinta_Negra_01 {
+    position: absolute;
+    width: 200px;
+    margin-top: 1780px;
+    margin-right: 1500px;
+    z-index: 6;
+}
+
+.Seccion_05_Cinta_Negra_02 {
+    position: absolute;
+    width: 80px;
+    margin-top: 1600px;
+    margin-left: 1440px;
+    z-index: 6;
+}
+
+/*Seccion 6*/
+.Seccion_06 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1150px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    position: relative;
+}
+
+.Dia_Trabajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+}
+
+.Seccion_06_Imagenes {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.Seccion_06_Fondo_Foto_01 {
+    position: absolute;
+    width: 500px;
+    margin-right: 600px;
+    transform: rotate(2deg);
+    z-index: 7;
+}
+
+.Seccion_06_Foto_01 {
+    position: absolute;
+    width: 485px;
+    margin-right: 600px;
+    transform: rotate(2deg);
+    z-index: 7;
+}
+
+.Seccion_06_Fondo_Foto_02 {
+    position: absolute;
+    width: 500px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    transform: rotate(-3deg);
+    z-index: 7;
+}
+
+.Seccion_06_Foto_02 {
+    position: absolute;
+    width: 485px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    transform: rotate(-3deg);
+    z-index: 7;
+}
+
+.Seccion_06_Cinta_01 {
+    position: absolute;
+    width: 150px;
+    margin-right: 1010px;
+    margin-bottom: 270px;
+    transform: rotate(-25deg);
+    z-index: 8;
+}
+
+.Seccion_06_Cinta_02 {
+    position: absolute;
+    width: 200px;
+    margin-right: 270px;
+    margin-top: 280px;
+    transform: rotate(-2deg);
+    z-index: 8;
+}
+
+.Seccion_06_Cinta_03 {
+    position: absolute;
+    width: 180px;
+    margin-left: 980px;
+    margin-bottom: 340px;
+    transform: rotate(20deg);
+    z-index: 8;
+}
+
+.Seccion_06_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 1230px;
+    width: 1550px;
+    transform: rotate(1deg);
+    z-index: 6;
+}
+
+.Seccion_06_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 950px;
+    width: 1600px;
+    z-index: 3;
+}
+
+.Seccion_06_Mancha_Pintura_01 {
+    position: absolute;
+    width: 600px;
+    margin-bottom: 650px;
+    margin-right: 1100px;
+    z-index: 2;
+}
+
+.Seccion_06_Mancha_Pintura_02 {
+    position: absolute;
+    width: 400px;
+    margin-bottom: 450px;
+    margin-left: 1100px;
+    z-index: 2;
+}
+
+.Seccion_06_Mancha_Pintura_03 {
+    position: absolute;
+    width: 150px;
+    margin-bottom: 850px;
+    margin-left: 900px;
+    z-index: 2;
+}
+
+.Seccion_06_Mancha_Pintura_04 {
+    position: absolute;
+    width: 500px;
+    margin-top: 500px;
+    margin-right: 1500px;
+    z-index: 2;
+}
+
+.Seccion_06_Mancha_Pintura_05 {
+    position: absolute;
+    width: 700px;
+    margin-top: 500px;
+    margin-left: 1400px;
+    z-index: 2;
+}
+
+.Papel_01 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 625px;
+    height: auto;
+    z-index: 1;
+}
+
+.Papel_02 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 621px;
+    transform: rotate(180deg);
+    height: auto;
+    transform: scaleY(-1);
+    z-index: 1;
+}
+
+/*Seccion 7*/
+.Seccion_07 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 80PX;
+    background-color: #000000;
+    z-index: 0;
+}
+
+.Solidaridad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+.Seccion_07_Fondo_Foto_01 {
+    position: absolute;
+    width: 700px;
+    margin-right: 1700px;
+    margin-bottom: 400PX;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_07_Foto_01 {
+    position: absolute;
+    width: 680px;
+    margin-right: 1700px;
+    margin-bottom: 400PX;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_07_Fondo_Foto_02 {
+    position: absolute;
+    width: 600px;
+    margin-top: 100px;
+    margin-right: 1800px;
+    transform: rotate(10deg);
+    z-index: 6;
+}
+
+.Seccion_07_Foto_02 {
+    position: absolute;
+    width: 580px;
+    margin-top: 100px;
+    margin-right: 1800px;
+    transform: rotate(10deg);
+    z-index: 6;
+}
+
+.Seccion_07_Fondo_Foto_03 {
+    position: absolute;
+    width: 750px;
+    margin-top: 900px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_07_Foto_03 {
+    position: absolute;
+    width: 730px;
+    margin-top: 900px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_07_Fondo_Foto_04 {
+    position: absolute;
+    width: 750px;
+    margin-bottom: 300px;
+    margin-left: 1650px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_07_Foto_04 {
+    position: absolute;
+    width: 730px;
+    margin-bottom: 300px;
+    margin-left: 1650px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_07_Fondo_Foto_05 {
+    position: absolute;
+    width: 800px;
+    margin-top: 600px;
+    margin-left: 1800px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_07_Foto_05 {
+    position: absolute;
+    width: 780px;
+    margin-top: 600px;
+    margin-left: 1800px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+/*Seccion 8*/
+.Seccion_08 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 510px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 250px;
+}
+
+.Seccion_08_Division_01 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_08_Titulo {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 600px;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(1deg);
+    z-index: 3;
+}
+
+.Seccion_08_Fondo_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 143px;
+    width: 30px;
+    z-index: 4;
+}
+
+.Seccion_08_Fondo_Centro {
+    display: flex;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    background-image: url(../../Img/Fondo/Fondo_Centro_Texto_Naranja.jpg);
+    background-size: 30px;
+    background-repeat: repeat-x;
+    z-index: 3;
+}
+
+.Seccion_08_Texto_Titulo {
+    font-family: 'Bebas Neue';
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_08_Fondo_Derecho {
+    display: flex;
+    width: 30px;
+    position: absolute;
+    margin-left: 143px;
+    z-index: 4;
+}
+
+.Seccion_08_Descripcion {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_08_Cinta_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 870px;
+    width: 20.6px;
+    z-index: 0;
+}
+
+.Seccion_08_Cinta_Centro {
+    display: flex;
+    width: 850px;
+    height: 120px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #191919;
+}
+
+.Seccion_08_Texto_Cinta {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_08_Cinta_Derecho {
+    display: flex;
+    width: 52px;
+    position: absolute;
+    margin-left: 902px;
+    z-index: 0;
+}
+
+.Seccion_08_Division_02 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 220px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Seccion_08_Trabajo {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_08_Texto_Trabajo {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+    width: 50%;
+    font-size: 22px;
+}
+
+.Seccion_08_Cuadro_Trabajo {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 20px 30px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Seccion_08_Division_03 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 130px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Linea_Seccion_09 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.Linea_Superior_Seccion_07 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+    margin-bottom: 883px;
+    z-index: -1;
+}
+
+.Seccion_08_Degradado_Superior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 460px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    z-index: -2;
+}
+
+.Seccion_08_Degradado_Inferior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.Seccion_08_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 420px;
+    width: 1750px;
+    z-index: 6;
+}
+
+.Seccion_08_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 500px;
+    width: 1550px;
+    transform: rotate(-10deg);
+    z-index: 0;
+}
+
+.Seccion_08_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 780px;
+    width: 1750px;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_08_Cinta_De_Seguridad_04 {
+    position: absolute;
+    margin-bottom: 800px;
+    margin-right: 500px;
+    width: 1550px;
+    transform: rotate(-5deg);
+    z-index: -2;
+}
+
+.Seccion_08_Fondo_Foto_01 {
+    position: absolute;
+    width: 800px;
+    margin-top: 100px;
+    margin-right: 1900px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_08_Foto_01 {
+    position: absolute;
+    width: 780px;
+    margin-top: 100px;
+    margin-right: 1900px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_08_Fondo_Foto_02 {
+    position: absolute;
+    width: 700px;
+    margin-top: 950px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_08_Foto_02 {
+    position: absolute;
+    width: 680px;
+    margin-top: 950px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_08_Fondo_Foto_03 {
+    position: absolute;
+    width: 800px;
+    margin-top: 780px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+.Seccion_08_Foto_03 {
+    position: absolute;
+    width: 780px;
+    margin-top: 780px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+.Seccion_08_Mancha_Pintura_01 {
+    position: absolute;
+    width: 600px;
+    margin-bottom: 500px;
+    margin-left: 1500px;
+    z-index: -1;
+}
+
+.Seccion_08_Mancha_Pintura_02 {
+    position: absolute;
+    width: 200px;
+    margin-bottom: 400px;
+    margin-right: 950px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/*Seccion 9*/
+.Seccion_09 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 430px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Grandes_Jefes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Seccion 10*/
+.Seccion_10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Seccion_10_Division_01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.Seccion_10_Fondo_Foto_01 {
+    position: absolute;
+    width: 600px;
+    margin-left: 800px;
+    transform: rotate(-1deg);
+    z-index: 6;
+}
+
+.Seccion_10_Foto_01 {
+    position: absolute;
+    width: 580px;
+    margin-left: 800px;
+    transform: rotate(-1deg);
+    z-index: 6;
+}
+
+.Seccion_10_Texto_01 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 190px;
+    width: 635px;
+    height: 258px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #191919;
+}
+
+.Seccion_10_Division_Decoracion_Izquierda {
+    position: absolute;
+    margin-right: 1190px;
+}
+
+.Seccion_10_Division_02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.Seccion_10_Texto_02 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 190px;
+    width: 635px;
+    height: 258px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #191919;
+}
+
+.Seccion_10_Fondo_Foto_02 {
+    position: absolute;
+    width: 600px;
+    margin-right: 800px;
+    transform: rotate(1deg);
+    z-index: 6;
+}
+
+.Seccion_10_Foto_02 {
+    position: absolute;
+    width: 580px;
+    margin-right: 800px;
+    transform: rotate(1deg);
+    z-index: 6;
+}
+
+.Seccion_10_Division_Decoracion_Derecha {
+    position: absolute;
+    margin-left: 1260px;
+}
+
+.Linea_Inferior_Seccion_10 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 988px;
+    transform: rotate(180deg);
+    z-index: 5;
+}
+
+.Seccion_10_Degradado_Superior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 650px;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.Seccion_10_Degradado_Inferior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 650px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.Seccion_10_Division {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: end;
+    justify-content: end;
+    margin-top: 950px;
+}
+
+.Seccion_10_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-bottom: 850px;
+    margin-right: 800px;
+    width: 1650px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+.Seccion_10_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-bottom: 1000px;
+    margin-left: 400px;
+    width: 1400px;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+.Seccion_10_Cinta_De_Seguridad_03 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 900px;
+    transform: rotate(-8deg);
+    z-index: -1;
+}
+
+.Seccion_10_Cinta_De_Seguridad_04 {
+    position: absolute;
+    width: 1550px;
+    margin-bottom: 200px;
+    z-index: -1;
+}
+
+.Seccion_10_Cinta_De_Seguridad_05 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.Seccion_10_Mancha_Pintura_01 {
+    position: absolute;
+    width: 500px;
+    margin-top: 700px;
+    margin-left: 1150px;
+    transform: rotate(-70deg);
+    z-index: -1;
+}
+
+.Seccion_10_Mancha_Pintura_02 {
+    position: absolute;
+    width: 700px;
+    margin-bottom: 950px;
+    margin-right: 1200px;
+    transform: rotate(60deg);
+    z-index: -2;
+}
+
+.Seccion_10_Mancha_Pintura_03 {
+    position: absolute;
+    width: 100px;
+    margin-bottom: 1020px;
+    margin-right: 350px;
+    z-index: -1;
+}
+
+.Seccion_10_Cinta_Negra_01 {
+    position: absolute;
+    width: 200px;
+    margin-top: 1780px;
+    margin-right: 1500px;
+    z-index: 10;
+}
+
+.Seccion_10_Cinta_Negra_02 {
+    position: absolute;
+    width: 80px;
+    margin-top: 1600px;
+    margin-left: 1440px;
+    z-index: 10;
+}
+
+.Seccion_10_Titulo_Division_01 {
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 380px;
+    margin-right: 1040px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_10_Titulo {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Seccion_10_Fondo_Izquierdo_01 {
+    display: flex;
+    position: absolute;
+    right: 759px;
+    width: 30px;
+    z-index: 4;
+}
+
+.Seccion_10_Fondo_Centro {
+    display: flex;
+    position: absolute;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    background-image: url(../../Img/Fondo/Fondo_Centro_Texto_Naranja.jpg);
+    background-size: 30px;
+    background-repeat: repeat-x;
+    z-index: 3;
+}
+
+.Seccion_10_Texto_Titulo {
+    font-family: 'Bebas Neue';
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_10_Fondo_Derecho_01 {
+    display: flex;
+    width: 30px;
+    position: absolute;
+    left: 895px;
+    z-index: 4;
+}
+
+.Seccion_10_Titulo_Division_02 {
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 380px;
+    margin-left: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_10_Fondo_Izquierdo_02 {
+    display: flex;
+    position: absolute;
+    right: 759px;
+    width: 30px;
+    z-index: 4;
+}
+
+.Seccion_10_Fondo_Derecho_02 {
+    display: flex;
+    width: 30px;
+    position: absolute;
+    left: 872px;
+    z-index: 4;
+}
+
+/*Seccion 11*/
+.Seccion_11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 0px;
+    padding-bottom: 80px;
+    background-image: url(../../Img/Fondo/Fondo_Etiqueta.png);
+    background-size: 98.7%;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.Seccion_11_Fondo_Foto_01 {
+    position: absolute;
+    width: 700px;
+    margin-right: 1750px;
+    margin-bottom: 100PX;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_11_Foto_01 {
+    position: absolute;
+    width: 680px;
+    margin-right: 1750px;
+    margin-bottom: 100PX;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_11_Fondo_Foto_02 {
+    position: absolute;
+    width: 750px;
+    margin-top: 750px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_11_Foto_02 {
+    position: absolute;
+    width: 730px;
+    margin-top: 750px;
+    margin-right: 1750px;
+    z-index: 7;
+}
+
+.Seccion_11_Fondo_Foto_03 {
+    position: absolute;
+    width: 750px;
+    margin-bottom: 300px;
+    margin-left: 1850px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_11_Foto_03 {
+    position: absolute;
+    width: 730px;
+    margin-bottom: 300px;
+    margin-left: 1850px;
+    transform: rotate(3deg);
+    z-index: 5;
+}
+
+.Seccion_11_Fondo_Foto_04 {
+    position: absolute;
+    width: 800px;
+    margin-top: 600px;
+    margin-left: 1850px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_11_Foto_04 {
+    position: absolute;
+    width: 780px;
+    margin-top: 600px;
+    margin-left: 1850px;
+    transform: rotate(-5deg);
+    z-index: 6;
+}
+
+.Seccion_11_Cinta_De_Seguridad_01 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 200px;
+    transform: rotate(-8deg);
+    z-index: 0;
+}
+
+.Seccion_11_Cinta_De_Seguridad_02 {
+    position: absolute;
+    width: 1550px;
+    margin-top: 200px;
+    z-index: 0;
+}
+
+.Evaluacion {
+    width: 70%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+.Linea_Seccion_12 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 615px;
+    z-index: 5;
+}
+
+/*Seccion 12*/
+.Seccion_12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+.Lema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 60%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+}
+
+.Seccion_Blanco {
+    padding: 10px 0px;
+}
+
+/*Seccion 13*/
+.Seccion_13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 510px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 250px;
+}
+
+.Seccion_13_Division_01 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_13_Titulo {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 120px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(1deg);
+    z-index: 3;
+}
+
+.Seccion_13_Fondo_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 414px;
+    width: 30px;
+    z-index: 4;
+}
+
+.Seccion_13_Fondo_Centro {
+    display: flex;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    background-image: url(../../Img/Fondo/Fondo_Centro_Texto_Naranja.jpg);
+    background-size: 30px;
+    background-repeat: repeat-x;
+    z-index: 3;
+}
+
+.Seccion_13_Texto_Titulo {
+    font-family: 'Bebas Neue';
+    color: #000000;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+.Seccion_13_Fondo_Derecho {
+    display: flex;
+    width: 30px;
+    position: absolute;
+    margin-left: 414px;
+    z-index: 4;
+}
+
+.Seccion_13_Descripcion {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_13_Cinta_Izquierdo {
+    display: flex;
+    position: absolute;
+    margin-right: 812px;
+    width: 13.8px;
+    z-index: 0;
+}
+
+.Seccion_13_Cinta_Centro {
+    display: flex;
+    width: 800px;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #191919;
+}
+
+.Seccion_13_Texto_Cinta {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 22px;
+    padding: 0px 5px;
+}
+
+.Seccion_13_Cinta_Derecho {
+    display: flex;
+    width: 34.7px;
+    position: absolute;
+    margin-left: 835px;
+    z-index: 0;
+}
+
+.Seccion_13_Division_02 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 220px;
+    margin: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.Seccion_13_Trabajo {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seccion_13_Texto_Trabajo {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+    width: 60%;
+    font-size: 22px;
+}
+
+.Seccion_13_Cuadro_Trabajo {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 20px 30px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Seccion_13_Division_03 {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 130px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Linea_Seccion_14 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.Linea_Superior_Seccion_12 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+    margin-bottom: 883px;
+    z-index: 5;
+}
+
+.Seccion_13_Degradado_Superior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 460px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.Seccion_13_Degradado_Inferior {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.Seccion_13_Cinta_De_Seguridad_01 {
+    position: absolute;
+    margin-top: 420px;
+    width: 1750px;
+    z-index: 6;
+}
+
+.Seccion_13_Cinta_De_Seguridad_02 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 500px;
+    width: 1550px;
+    transform: rotate(-10deg);
+    z-index: 0;
+}
+
+.Seccion_13_Cinta_De_Seguridad_03 {
+    position: absolute;
+    margin-bottom: 850px;
+    width: 1750px;
+    transform: rotate(-5deg);
+    z-index: 7;
+}
+
+.Seccion_13_Cinta_De_Seguridad_04 {
+    position: absolute;
+    margin-bottom: 800px;
+    margin-right: 500px;
+    width: 1550px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.Seccion_13_Fondo_Foto_01 {
+    position: absolute;
+    width: 700px;
+    margin-bottom: 545px;
+    margin-right: 1800px;
+    transform: rotate(-5deg);
+    z-index: 3;
+}
+
+.Seccion_13_Foto_01 {
+    position: absolute;
+    width: 680px;
+    margin-bottom: 545px;
+    margin-right: 1800px;
+    transform: rotate(-5deg);
+    z-index: 3;
+}
+
+.Seccion_13_Fondo_Foto_02 {
+    position: absolute;
+    width: 600px;
+    margin-top: 200px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_13_Foto_02 {
+    position: absolute;
+    width: 580px;
+    margin-top: 200px;
+    margin-right: 1900px;
+    transform: rotate(2deg);
+    z-index: 6;
+}
+
+.Seccion_13_Fondo_Foto_03 {
+    position: absolute;
+    width: 800px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+.Seccion_13_Foto_03 {
+    position: absolute;
+    width: 780px;
+    margin-left: 1900px;
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+/*Seccion 14*/
+.Seccion_14 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 575px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Seccion_14_Division_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 575px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 3;
+}
+
+.Seccion_14_Papel {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.Formulario_Seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 70%;
+    height: 85%;
+    border-radius: 30px;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.Division_14 {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Formulario {
+    display: flex;
+    width: 70%;
+    height: 88%;
+    font-family: 'Roboto';
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0px;
+}
+
+.input-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.input {
+    display: flex;
+    width: 700px;
+    height: 35px;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
+    background: transparent;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-family: 'Roboto';
+}
+
+label {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Roboto';
+    transition: 0.3s;
+}
+
+textarea {
+    display: flex;
+    width: 700px;
+    height: 80px;
+    border: 3px solid #ffffff;
+    border-radius: 35px;
+    background: transparent;
+    padding: 20px 30px;
+    color: #ffffff;
+    font-family: 'Roboto';
+    resize: none;
+}
+
+.boton_enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 40px;
+    background: #ffffff;
+    color: #000;
+    font-family: 'Bebas Neue';
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.boton_enviar:hover {
+    transform: scale(1.1);
+}
+
+.Seccion_14_Division {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: end;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.Seccion_14_Cinta_Negra_01 {
+    position: absolute;
+    width: 200px;
+    margin-top: 100px;
+    margin-right: 1500px;
+    z-index: 6;
+}
+
+.Seccion_14_Cinta_Negra_02 {
+    position: absolute;
+    width: 80px;
+    margin-bottom: 100px;
+    margin-left: 1440px;
+    z-index: 3;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-image: url(../../Img/Fondo/Linea_Diagonal.png);
+    background-repeat: repeat;
+    z-index: 100;
+}
+
+.Footer_Nombre {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+
+}
+
+.Nombre {
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.Nombre_Linea {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Linea {
+    display: flex;
+    width: 120px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 0px 10px;
+}
+
+.Redes {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.Facebook {
+    display: flex;
+    width: 30px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Facebook:hover {
+    transform: scale(1.1);
+}
+
+.Nintendo {
+    display: flex;
+    width: 50px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Nintendo:hover {
+    transform: scale(1.1);
+}
+
+.Twitter {
+    display: flex;
+    width: 30px;
+    transition: transform 0.3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Twitter:hover {
+    transform: scale(1.1);
+}
+
+.Atribuciones {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+}
